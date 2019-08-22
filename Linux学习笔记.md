@@ -13,6 +13,8 @@
 并行运行 时间片轮转 时钟中断（硬件手段）
 
 #### CPU和MMU
+![Image text](https://github.com/lhsjohn/TreeNode/blob/master/pictures/1566266752157.png)
+
 
 ![Screenshot_20190820_090434_tv.danmaku.bili](pictures\Screenshot_20190820_090434_tv.danmaku.bili.jpg)
 
@@ -22,6 +24,8 @@
 
 MMU（内存管理单元）主要是用来完成虚拟内存与物理内存的对应，修改CPU内存访问级别语言。
 ![github](pictures\Screenshot_20190820_092419_tv.danmaku.bili.jpg)
+
+
 ![Screenshot_20190820_092419_tv.danmaku.bili](pictures\Screenshot_20190820_092419_tv.danmaku.bili.jpg)
 
 text代码、data数据、heap堆区（低地址向高地址生长）、stack栈区（高地址向低地址生长）、kernel内核区。这0-4G是虚拟内存空间。0-3G为用户空间，不可访问内核区，内核区可以访问用户区。
@@ -68,6 +72,7 @@ text代码、data数据、heap堆区（低地址向高地址生长）、stack栈
 引入环境变量表：需声明环境变量。extern char **environ;（extern对一个变量进行声明或导出）
 
 ![1566281228627](pictures\1566281228627.png)
+
 
 ![1566281467738](pictures\1566281467738.png)
 
