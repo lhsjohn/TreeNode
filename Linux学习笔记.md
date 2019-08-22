@@ -21,7 +21,7 @@
 预取器主要负责从cache缓冲区取指令。交给译码器进行译码，分析指令是干什么的，看需要哪些寄存器进行处理。再交给ALU进行运算，ALU只会加法和左移运算，算好后再将数据写回寄存器，寄存器再返回cache缓冲区进行保存。
 
 MMU（内存管理单元）主要是用来完成虚拟内存与物理内存的对应，修改CPU内存访问级别语言。
-
+![github](/pictures\Screenshot_20190820_092419_tv.danmaku.bili.jpg)
 ![Screenshot_20190820_092419_tv.danmaku.bili](pictures\Screenshot_20190820_092419_tv.danmaku.bili.jpg)
 
 text代码、data数据、heap堆区（低地址向高地址生长）、stack栈区（高地址向低地址生长）、kernel内核区。这0-4G是虚拟内存空间。0-3G为用户空间，不可访问内核区，内核区可以访问用户区。
